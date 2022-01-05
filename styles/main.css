@@ -1,46 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 *{
     margin: 0;
     padding: 0;
-}
-
-body {
-    background-color: grey;
-}
-
-header {
-    background-color: #191919;
-    color: #00ff97;
-    display: flex;
-    justify-content: space-evenly;
+    max-width: 100%;
+    font-family: 'Roboto', sans-serif;
 }
 
 .avatar {
-    padding-top: 20px;
-    padding-bottom: 20px;
-    width: 400px;
-    height: 250px;
+    width: 100%;
 }
 
-.info {
-    padding-top: 35px;
+header{
+    background-color: rgb(22, 19, 19);
+    display: flex;
+    flex-direction: column;
+}
+
+.info  {
+    color: #00ff77;
+    display: flex;
+    flex-direction: column;
     text-align: center;
 }
 
 .presen {
-    font-size: 1.2em;
-    padding: 15px 15px;
+    padding: 15px 10px 15px 10px;
     text-align: center;
+    font-weight: 550;
+    font-size: 16px;
 }
 
-.esto{
-    padding: 10px;
-    justify-content: space-around;
+.esto {
+    color: whitesmoke;
+    background-color: rgb(48, 41, 41);
     text-align: center;
     display: flex;
+    flex-direction: column;
 }
 
 .subtitulo {
-    color: #00ff97;
-    padding: 2px 2px;
-    font-size: 150%;
+    font-style: italic;
+    color: black;
+    background-color: #00ff77;;
+    font-size: 20px;
+}
+
+@media only screen and (min-width: 1024px) {
+    header {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+    }
+    .avatar {
+        width: 35%;
+        order: 1;
+    }
+    .esto {
+        display: flex;
+        flex-direction: row;
+    }
 }
