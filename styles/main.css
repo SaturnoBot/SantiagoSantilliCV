@@ -31,11 +31,16 @@ header{
 }
 
 .esto {
+    padding: 20px;
     color: whitesmoke;
     background-color: rgb(48, 41, 41);
     text-align: center;
     display: flex;
     flex-direction: column;
+}
+
+p {
+    padding: 5px 0px 5px 0px;
 }
 
 .subtitulo {
